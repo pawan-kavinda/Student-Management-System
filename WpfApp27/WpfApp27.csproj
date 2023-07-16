@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="High_resolution_wallpaper_background_ID_77700360787.jpg" />
+    <None Remove="pngtree-school-season-flowers-blackboard-student-image_13475.jpg" />
+    <None Remove="View\360_F_426527111_59QersN3ayDJ7Sfa5qwnKkp4l1O5tuAp.jpg" />
+    <None Remove="View\desktop-wallpaper-login-page-login.jpg" />
+    <None Remove="View\illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" />
+    <None Remove="View\istockphoto-1294090117-612x612.jpg" />
+    <None Remove="View\new login.jpg" />
+    <None Remove="View\pngtree-beautiful-pink-purple-gradient-gradient-simple-image_11557.jpg" />
+    <None Remove="View\pngtree-glass-morphim-effect-registration-banner-with-gradient-blue-image_934693.jpg" />
+    <None Remove="View\pngtree-vector-lock-icon-png-image_1028350.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="High_resolution_wallpaper_background_ID_77700360787.jpg" />
+    <Resource Include="View\360_F_426527111_59QersN3ayDJ7Sfa5qwnKkp4l1O5tuAp.jpg" />
+    <Resource Include="View\desktop-wallpaper-login-page-login.jpg" />
+    <Resource Include="View\illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" />
+    <Resource Include="View\istockphoto-1294090117-612x612.jpg" />
+    <Resource Include="View\new login.jpg" />
+    <Resource Include="View\pngtree-beautiful-pink-purple-gradient-gradient-simple-image_11557.jpg" />
+    <Resource Include="View\pngtree-glass-morphim-effect-registration-banner-with-gradient-blue-image_934693.jpg" />
+    <Resource Include="View\pngtree-vector-lock-icon-png-image_1028350.jpg" />
+  </ItemGroup>
+
+</Project>

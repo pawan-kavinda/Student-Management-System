@@ -1,0 +1,56 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp27"
+        xmlns:Model="clr-namespace:WpfApp27.Model" x:Class="WpfApp27.StudentAcceptView"
+        mc:Ignorable="d"
+        Title="StudentAcceptView" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/View/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg"/>
+            </StackPanel.Background>
+            <StackPanel.DataContext>
+                <Model:AdminforumModel/>
+            </StackPanel.DataContext>
+            <Button Width="200" Click="Button_Click" Content="Display All Students" RenderTransformOrigin="0.529,2.702">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.273"/>
+                        <TranslateTransform X="-0.81" Y="0.099"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </StackPanel>
+
+
+
+        <StackPanel Height="210">
+            <ListView x:Name="list" Margin="5,20,5,0" Height="195" VerticalAlignment="Bottom">
+                <ListView.DataContext>
+                    <Model:AdminforumModel/>
+                </ListView.DataContext>
+                <ListView.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Clear"/>
+                    </ContextMenu>
+                </ListView.ContextMenu>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header=" ID" Width="200" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header=" Name" Width="300" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Reg No" Width="300" DisplayMemberBinding="{Binding Regno}"/>
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>
